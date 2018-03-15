@@ -2,6 +2,7 @@ $('#btn').click(function(){
 	var r= $('#row').val();
 	var c= $('#col').val();
 	console.log(r);
+	$('.big_box').html("");
 	for (var i=0 ; i < r ; i++) {
 		for (var j=0 ; j < c ; j++){
 			//alert("inside");

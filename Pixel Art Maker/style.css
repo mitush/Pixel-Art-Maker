@@ -4,11 +4,20 @@
 .big_box{
 	padding: 0px 0px 0px 15%;
 	border: 2px solid red;
-	float: left;
+	/*float: left;*/
 }
-.small_box{
+/*.small_box{
 	border: 2px solid blue;
-	/*height: 50%;*/
+	height: 50%;
 	width: 25%;
 	float: left;
+}*/
+.small_box {
+
+    border: 1px solid black;
+    width: 25px;
+    float: left;
+    font-size: 10px;
+    height: 17px;
+
 }
