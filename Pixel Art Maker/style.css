@@ -1,0 +1,14 @@
+#container{
+	border:2px solid black;
+}
+.big_box{
+	padding: 0px 0px 0px 15%;
+	border: 2px solid red;
+	float: left;
+}
+.small_box{
+	border: 2px solid blue;
+	/*height: 50%;*/
+	width: 25%;
+	float: left;
+}
