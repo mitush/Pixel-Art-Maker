@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Pixel Art Maker </title>
-  <script src="app.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- <link type="javascript" href="app.js"> -->
-
-  <!-- <link type="javascript"  href="myjs.js"> -->
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<center>
-	<h2>PIXEL ART MAKER </h2>
-	Grid Height:<input type="text" id="row">
-	Grid Width :<input type="text" id="col"><br>
-	Pick A Color <input type="color" name="_col">
-	<br>
-	<button id="btn">Click Me!</button>
-	<div class="big_box">
-	<h3> Design Canvas </h3>
-	</div>
-	</center>
-	<script type="text/javascript" src="myjs.js"></script>
-</body>
+    <h1>Lab: Pixel Art Maker</h1>
 
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit" id="inp_submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="designs.js"></script>
+</body>
 </html>
