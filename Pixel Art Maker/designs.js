@@ -13,13 +13,13 @@ var tab = $('#pixelCanvas');
 var color = $('#colorPicker');
 console.log(color.val());
 tab.html("");
-//alert("inside func");
+//alert("inside function");
 for(var i=0 ; i<r ; i++)
 {	  
 	// row = tab.insertRow(i);
 	var row = $("<tr>");
 	tab.append(row);
-	//alert("inside func1");
+	//alert("inside row col add");
 	for(var j=0 ; j<c ; j++){
 		// cell = row.insertCell(j);
 		row.append($("<td>"));
@@ -27,10 +27,10 @@ for(var i=0 ; i<r ; i++)
 	}
 	tab.append(row);
 }
-// alert("inside functest");
+// alert("checking flow");
 $('.cell').click(function (event){
 	var c = color.val();
-	//alert("INside2");
+	//alert("Inside coloring function");
 	console.log('color is '+c);
 	$(event.target).css('background-color',c);
 });
